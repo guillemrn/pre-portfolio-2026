@@ -9,7 +9,7 @@ export default function ThemeToggle() {
 
     useEffect(() => {
         setMounted(true);
-        const storedTheme = localStorage.getItem('theme') as Theme | null;
+        const storedTheme = localStorage.getItem('theme_preference') as Theme | null;
         if (storedTheme) {
             setTheme(storedTheme);
         }
@@ -43,7 +43,7 @@ export default function ThemeToggle() {
             mediaQuery.addEventListener('change', applyTheme);
             return () => mediaQuery.removeEventListener('change', applyTheme);
         } else {
-            localStorage.setItem('theme', theme);
+            localStorage.setItem('theme_preference', theme);
         }
     }, [theme, mounted]);
 
