@@ -5,10 +5,35 @@
   --font-sans: "Outfit", sans-serif;
   --font-script: "Pinyon Script", cursive;
 
-  --color-bone: #f7f2e8;
-  --color-forest: #052e1c;
-  --color-neon: #29d067;
-  --color-card: #ffffff;
+  --color-bone: var(--bone);
+  --color-forest: var(--forest);
+  --color-neon: var(--neon);
+  --color-card: var(--card);
 
   --radius-xl: 12px;
+}
+
+/*
+  Theme Variables
+  --bone: Background color (Light: Cream, Dark: Deep Charcoal)
+  --forest: Text color (Light: Deep Green, Dark: Soft White/Grey)
+  --neon: Accent color
+  --card: Card background (Light: White, Dark: Dark Grey)
+*/
+:root {
+  --bone: #f7f2e8;
+  --forest: #052e1c;
+  --neon: #29d067;
+  --card: #ffffff;
+}
+
+.dark {
+  --bone: #02120b;
+  /* Deep matte black/grey */
+  --forest: #f7f2e8;
+  /* Soft white for text */
+  --neon: #29d067;
+  /* Keep accent */
+  --card: rgb(247 242 232 / 4%);
+  /* Slightly lighter for cards */
 }
