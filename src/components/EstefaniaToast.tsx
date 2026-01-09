@@ -19,7 +19,7 @@ export function EstefaniaToast() {
       <div className="bg-forest border border-neon/30 shadow-2xl rounded-full py-3 px-6 flex items-center gap-3 animate-in slide-in-from-bottom-5 fade-in duration-700 pointer-events-auto">
         <span className="text-xl">✨</span>
         <p className="font-sans text-sm font-medium text-white tracking-wide">
-          Partner of Estefanía? <span className="text-neon">Priority access granted.</span>
+          ¿Vienes del sitio de Estefanía? <span className="text-neon">Me encargo de toda su infraestructura digital. Hablemos de la tuya.</span>
         </p>
         <button
           onClick={() => setIsVisible(false)}
