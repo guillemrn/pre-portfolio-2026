@@ -1,0 +1,47 @@
+---
+import { Code, Zap, Smartphone } from "lucide-react";
+
+const services = [
+  {
+    title: "Desarrollo Web & Landings",
+    description:
+      "Sitios web y landing pages enfocados en conversión, diseñados para vender, no solo verse bien.",
+    icon: Code,
+  },
+  {
+    title: "Sistemas de Automatización",
+    description:
+      "Automatizo procesos para que tu negocio funcione incluso cuando tú no estás: citas, leads, seguimientos y más.",
+    icon: Zap,
+  },
+  {
+    title: "Prototipado de Apps (MVP)",
+    description:
+      "Valida tu idea antes de invertir en desarrollo: prototipos reales, flujos claros y pruebas con usuarios.",
+    icon: Smartphone,
+  },
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+  {
+    services.map((service) => (
+      <div class="group bg-white border border-forest/10 rounded-xl p-8 flex flex-col items-start gap-6 hover:border-neon hover:shadow-lg transition-all duration-300">
+        <div class="p-0">
+          <service.icon
+            className="w-8 h-8 text-forest group-hover:text-forest transition-colors duration-300"
+            strokeWidth={1.5}
+          />
+        </div>
+        <div class="space-y-3">
+          <h3 class="font-serif text-3xl text-forest leading-none tracking-tight">
+            {service.title}
+          </h3>
+          <p class="font-sans text-base text-forest/70 leading-relaxed">
+            {service.description}
+          </p>
+        </div>
+      </div>
+    ))
+  }
+</div>

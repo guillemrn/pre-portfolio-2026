@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", serif;
+  --font-sans: "Outfit", sans-serif;
+  --font-script: "Pinyon Script", cursive;
+
+  --color-bone: #f7f2e8;
+  --color-forest: #052e1c;
+  --color-neon: #29d067;
+  --color-card: #ffffff;
+
+  --radius-xl: 12px;
+}
